@@ -8,11 +8,11 @@ Project details :
 
 3. Now you will see the form for regitration. Enter the user,email and password here. And click on submit button.
 
-4.After succefully registration now you can login by entering the registered email and password.
+4. After succefully registration now you can login by entering the registered email and password.
 
-5.Succefully login brings you to on main dashboard.
+5. Succefully login brings you to on main dashboard.
 
-6.Here you performe multiple activity like add to cart and view the cart.
+6. Here you performe multiple activity like add to cart and view the cart.
 
 
 
