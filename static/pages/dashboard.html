@@ -1,0 +1,58 @@
+
+<div class="col-md-12"><h5>Hi, {{user_name}}</h5>
+	<br>
+	<div class="col-md-12">
+		<div class="col-md-1"></div>
+		<div class="col-md-10" style="background-color: rgb(188, 186, 186); height: 50px;"><h4 style="padding-top: 5px;">Policybazaar : Store</h4><br><br>
+			<div class="col-md-10">
+				<div>Welcome to the policybazzar store.</div>
+				<div>Please select the product you want and add item to your shopping cart.</div>
+				<div>When you are done. Click the shopping cart icon to review your order and checkout.</div>
+				<br></br>
+				<div>Search <input type="text" ng-model="searchKeyword" 
+					placeholder="Enter some text to search" /></div>
+					<br>
+					<div class="table-responsive">
+						<table class="table">          
+							<tr>
+								<th>Image
+								</th>
+								<th>Helath Product
+								</th>
+								<th>Price
+								</th>
+								<th>Action
+								</th>
+							</tr>
+							<tr ng-repeat="company in companies  | filter: searchKeyword ">
+								<td><img width="50px" height="50px" src="{{company.image}}">
+								</td>
+								<td>{{company.name}}
+								</td>
+								<td>{{company.price}}
+								</td>
+								<td>
+									<input type="button" value="Add to Cart" class="btn btn-primary" ng-click="addtocart(company.image,company.name,company.price)"/>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="col-md-2"><h5 ng-click="showcart()"><img width="50px" height="50px" src="static/img/cart.png"></h5>
+					<div ng-show="cart_show">
+						<table class="table">          
+							<tr ng-repeat="c in cart_show ">
+								<td><img width="50px" height="50px" src="{{c.image}}">
+								</td>
+								<td>{{c.name}}
+								</td>
+								<td>{{c.price}}
+								</td>
+							</tr>
+						</table>
+						<button class="btn btn-primary" ng-click="checkout()">Checkout</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
