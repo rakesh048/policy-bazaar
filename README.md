@@ -12,7 +12,7 @@ Project details :
 
 5. Succefully login brings you to on main dashboard.
 
-6. Here you performe multiple activity like add to cart and view the cart.
+6. Here you performe multiple activity like : add to cart and view the cart.
 
 
 
